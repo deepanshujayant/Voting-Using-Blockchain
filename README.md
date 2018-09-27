@@ -1,24 +1,10 @@
-# Your_First_Decentralized_Application
-This is the code for "A Guide to Building Your First Decentralized Application" by Siraj Raval on Youtube
-
-
-## Overview
-
-This is the code for [this](https://youtu.be/gSQXq2_j-mw) video on Youtube by Siraj Raval. It's a guide on how to build your first decentralized application. 
+# Decentralized_Voting_Application
 
 ## Dependencies
 
 * ethereumjs-testrpc 
 * web3@0.20.1
 * solc
-
-Install missing dependencies with [npm](https://www.npmjs.com/). 
-
-```
-> git clone git@github.com:llSourcell/Your_First_Decentralized_Application.git
-> cd Your_First_Decentralized_Application
-> npm install 
-```
 
 ## Usage
 
@@ -30,7 +16,7 @@ node_modules/ethereumjs-testrpc/build/cli.node.js
 Run the following commands to open the node console then deploy your contract to the test chain
 
 ```
-siraj:~/hello_world_voting$ node
+anuj:~/hello_world_voting$ node
 > Web3 = require('web3')
 > web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
 > code = fs.readFileSync('Voting.sol').toString()
@@ -44,8 +30,4 @@ siraj:~/hello_world_voting$ node
 > contractInstance = VotingContract.at(deployedContract.address)
 ```
 
-Interact with the contract via the html page attached, just open it in your browser. See [this](https://medium.com/@mvmurthy/full-stack-hello-world-voting-ethereum-dapp-tutorial-part-1-40d2d0d807c2) tutorial for more details. 
-
-## Credits
-
-The credits for this code go to [maheshmurthy](https://gist.github.com/maheshmurthy). I've merely created a wrapper to get people started. 
+Interact with the contract via the html page attached, just open it in your browser.
